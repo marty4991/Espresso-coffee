@@ -75,7 +75,7 @@
 .filter-img {
     position:relative;
     float: right;
-    margin-top: -56px;
+    margin-top: -54px;
 }
 .filter-styles {
     color: #000;
@@ -229,5 +229,8 @@
     }
 }
 /*=====  End of Responsive Media Queries  ======*/
-
+.body
+{
+    overflow: hidden;
+}
 

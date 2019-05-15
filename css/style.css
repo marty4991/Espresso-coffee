@@ -8,8 +8,11 @@
     width: 260px;
     height: 550px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
-     margin: 29px;
+    margin: 29px;
 
+}
+.espresso-theme {
+    overflow: hidden;
 }
 .item-part-number {
     width: 132px;
