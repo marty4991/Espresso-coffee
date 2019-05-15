@@ -1,6 +1,9 @@
 /*=============================================
 =            The Juicer Theme            =
 =============================================*/
+body {
+    overflow:hidden;
+}
 body.espresso-theme {
     color: #181818;
     background: #fff;
