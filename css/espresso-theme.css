@@ -28,10 +28,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', end
     font-family: 'MyriadPro-Bold';
 }
 .espresso-theme .top-navigation .nav-item .nav-link,
-.espresso-theme .top-navigation .dropdown-item,
 .espresso-theme > .offcanvas .nav-item .nav-link {
-    color: #000;
+    color: white;
     font-size: 0.875rem;
+}
+.espresso-theme .top-navigation .dropdown-item {
+    color: black; 
 }
 
 /*----------  Bottom Navigation  ----------*/
