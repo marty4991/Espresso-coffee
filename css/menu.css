@@ -1,0 +1,240 @@
+/*=============================================
+=            Menu Component            =
+=============================================*/
+.site-header .dropdown-menu {
+  border: 0;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.19);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.19);
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.19);
+  margin: 0;
+  padding: 1.75rem 0 1.25rem 0;
+  top: calc(100% - 8px);
+  margin-top: 16px;
+}
+/*----------  Top Navigation  ----------*/
+.top-navigation {
+  padding: 0;
+  z-index: 9;
+  font-family: 'MyriadPro-Bold';
+}
+.top-navigation .logo-notch {
+  bottom: 0;
+  height: 52px;
+  right: -70%;
+  width: 500%;
+  overflow: visible;
+}
+.logo-notch path {
+  -webkit-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.site-header .top-navigation .secondary-navbar > .nav-item {
+  white-space: nowrap;
+}
+.menu-notch-fallback-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.icons-menu {
+  margin-left: 3.5rem;
+  height: 56px;
+}
+.navcart-dropdown .btn-group-vertical>.btn:not(.dropdown-toggle) {
+  text-transform: uppercase;
+}
+.icons-menu .dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+/*----------  Bottom Navigation  ----------*/
+.navbar-toggler-icon {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+}
+.navbar-toggler-inner:after,
+.navbar-toggler-inner:before {
+  display: block;
+  content: '';
+}
+.navbar-toggler-inner,
+.navbar-toggler-inner:after,
+.navbar-toggler-inner:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.navbar-toggler-inner {
+  top: calc(2px + 4px);
+}
+.navbar-toggler-inner:before {
+  top: calc(-2px + -4px);
+}
+.navbar-toggler-inner:after {
+  top: calc(2px + 4px);
+}
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  outline: none;
+}
+.navbar-toggler.is-active .navbar-toggler-inner:before {
+  transform: translate3d(-8px,2px,0) rotate(-45deg) scaleX(.7);
+}
+.navbar-toggler.is-active .navbar-toggler-inner:after {
+  transform: translate3d(-8px,-3px,0) rotate(45deg) scaleX(.7);
+}
+.navbar-toggler.is-active .navbar-toggler-inner {
+  background: rgba(0,0,0,0);
+  transform: translateX(5px);
+}
+.navbar-toggler.is-active .navbar-toggler-inner:after,
+.navbar-toggler.is-active .navbar-toggler-inner:before {
+  background-color: #fff;
+}
+/*----------  Order CTA Buttons  ----------*/
+.logo-svg {
+  width: 120px;
+  z-index: 9;
+}
+.dropdown--full-hover:not(.extra-items) .dropdown-toggle {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 2px;
+  margin-top: 6px;
+  padding-bottom: 9px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.dropdown--full-hover:not(.extra-items) .dropdown-toggle:before {
+  top: calc(50% - 3px) !important;
+}
+.dropdown--full-hover:not(.extra-items).show .dropdown-toggle:before {
+  opacity: 0;
+}
+/*=====  End of Menu Component  ======*/
+
+/*=============================================
+=            Responsive Media Queries            =
+=============================================*/
+@media (max-width: 767.98px) {
+  .offcanvas {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100% !important;
+    padding: 3rem 1.5rem !important;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in;
+    transform: translateX(-80vw);
+    z-index: 9999;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-navigation .navigation-wrapper {
+    width: 60%;
+    max-width: 60%;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .top-navigation .secondary-navbar,
+  .top-navigation .main-navbar {
+    height: 100%;
+    width: auto;
+  }
+  .top-navigation .logo-notch {
+    right: -35%;
+    height: 40px;
+  }
+  .logo-svg {
+    width: 220px;
+  }
+  .logo-wrapper {
+    -webkit-transform: translateY(calc(100% - 1rem));
+    transform: translateY(calc(100% - 1rem));
+    -webkit-transition: -webkit-transform 0.2s ease-out 0s;
+    transition: -webkit-transform 0.2s ease-out 0s;
+    -ms-transform: translateY(100%) translateY(-1rem); /* IE 11 */
+    transition: transform 0.2s ease-out 0s;
+    transition: transform 0.2s ease-out 0s, -webkit-transform 0.2s ease-out 0s;
+  }
+  .top-navigation .main-navbar {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+    transition: opacity 0.3s ease-in-out 0s;
+  }
+  .top-navigation .menu-notch {
+    bottom: 0;
+    height: 56px;
+    left: -60px;
+    width: 2000%;
+    z-index: -9;
+  }
+  .top-navigation .menu-notch.no-init {
+    background: url('../images/topmenu-curve-full@2x.png') no-repeat top left;
+    background-size: contain;
+  }
+  .top-navigation .secondary-navbar .nav-item + .nav-item .nav-link {
+    position: relative;
+  }
+  .top-navigation .secondary-navbar > .nav-item + .nav-item > .nav-link:before {
+    background: #861316;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+  }
+}
+.bottom-navigation {
+  height: 40px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .top-navigation .nav-section {
+    flex-direction: row-reverse !important;
+  }
+}
+@media (max-width:768px) {
+ .logo-svg {
+   visibility: hidden;
+ }
+}
+@media (min-width: 992px) {
+  .logo-svg {
+    width: 278px;
+  }
+  .top-navigation .main-navbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media (min-width: 1505px) {
+  .top-navigation .navigation-wrapper {
+    max-width: 72%;
+  }
+}
+/*=====  End of Responsive Media Queries  ======*/

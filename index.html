@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Bogdan Rotariu">
+    <title>Espresso Coffee</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/espresso-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="espresso-theme homepage">
+    <div class="site-inner">
+        <header class="site-header fixed-top">
+            <nav class="top-navigation navbar">
+                <div class="container d-flex align-items-end">
+                    <div class="logo-section d-flex position-relative">
+                        <svg class="logo-notch position-absolute no-init" id="logo-notch"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M0 0 C0 0 0 0 262 0 C0 0 0 0 1310 0 C1350 0 1350 40 1390 40 L0 40 L0 0"
+                                fill="#f2f2f2">
+                            </path>
+                        </svg>
+                        <button class="navbar-toggler" type="button" data-toggle="offcanvas"
+                            data-target="#navbarSupportedContent" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon d-block"><span
+                                    class="navbar-toggler-inner d-block"></span></span>
+                        </button>
+                        <a class="logo-wrapper d-flex text-uppercase align-items-center" href="#">
+                            <img src="images/logo.png" alt="" class="logo-svg">
+                        </a>
+                    </div>
+                    <div class="navigation-wrapper d-flex justify-content-end">
+                        <div
+                            class="nav-section ov-hidden navbar-collapse offcanvas offcanvas-collapse d-flex flex-column align-items-start align-items-md-end invisible-md">
+                            <ul class="secondary-navbar nav text-uppercase align-items-md-center d-flex flex-column flex-md-row flex-md-nowrap"
+                                id="secondary-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Productfinder</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item dropdown d-md-none">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                        aria-haspopup="true" aria-expanded="false">Language English</a>
+                                </li>
+
+                                <li
+                                    class="nav-item language-selector-md dropdown dropdown--full-hover d-none d-md-block">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                        aria-haspopup="true" aria-expanded="false">Language English</a>
+                                    <div class="dropdown-menu dropdown-menu-md-right color-ss">
+                                        <a class="dropdown-item" href="#">NL</a>
+                                        <a class="dropdown-item" href="#">FR</a>
+                                        <a class="dropdown-item" href="#">DE</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- <ul
+                                class="main-navbar nav text-uppercase align-items-md-center d-flex flex-column flex-md-row flex-md-nowrap invisible">
+                            </ul> -->
+                        </div>
+                        <div class="icons-menu position-relative d-flex align-items-center">
+                            <ul class="nav flex-nowrap" id="header-icons-menu">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link login-modal-toggle" data-modal-id="loginModal"><img
+                                            src="./images/personal-info.png" alt="">
+                                        <span class="icon-user" data-modal-id="loginModal"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown navcart-dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle cart-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"><img src="./images/shop-cart.png">
+                                        <span class="cart-qty d-none">0</span>
+                                        <span class="icon-shoppingcart">
+                                        </span>
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right bg-primary p-3">
+                                        <div class="btn-group-vertical w-100">
+                                            <a href="#" class="btn btn-outline-light d-block rounded-0">View Cart</a>
+                                            <a href="#" class="btn btn-outline-light d-block rounded-0">Checkout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <canvas class="menu-notch position-absolute no-init d-none d-md-block" id="top-menu-notch">
+                                <!-- Fallback img -->
+                                <img src="images/topmenu-curve-full@2x.png" alt="" class="menu-notch-fallback-img">
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </nav><!-- end .top-navigation.navbar -->
+            <nav class="bottom-navigation navbar navbar-expand-md d-none d-md-flex">
+
+            </nav><!-- end .bottom-navigation.navbar -->
+        </header>
+        <section>
+            <div class="espress-img"><img src="./images/espress-coffe.png" alt=""></div>
+            <div class="espresso-description">COFFEE AND ESPRESSO MACHINES <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen
+                    book.</p>
+            </div>
+
+            <div class="filter-img"><img src="./images/filter-img.png" alt="">
+                <div class="filter-styles">Filter results <img class="filter-sort" src="./images/filter-down.png"
+                        alt="">
+                </div>
+
+            </div>
+        </section>
+        <div class="site-footer-mobile d-md-none">
+
+            <div class="mobile-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 d-flex align-items-center">
+                            <span> copyright 2019 espressions<br>
+                                D&D by <a href="https://forcez.nl">forcez</a>
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <ul class="footer-widget__social-list nav flex-row justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- mobile-footer -->
+        </div><!-- end .site-footer-mobile -->
+    </div><!-- /.site-inner -->
+
+    <section class="section ">
+        <div class="product-list">
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> <input class="checkbox" type="checkbox" value="on" checked>
+                    </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+
+            </div>
+
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+
+            </div>
+
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+
+            </div>
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+
+            </div>
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+
+            </div>
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+
+            </div>
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+
+            </div>
+            <div class="row-items">
+                <div class="product-item">
+                    <a href="#" class="product-item-link">
+                        <img src="./images/espresso.png" alt="">
+                    </a></div>
+                <div class="item-part-number">
+                    <div><b>CASA V E80045</b></div>
+                    <div>Brand: <span class="text-decoration">ecm</span></div>
+                </div>
+                <div class="item-description">
+                    <div><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png" alt=""></div>
+                    <div class="item-space">
+                        <p>Grinds for French Press</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Automatic coffee brewer</p>
+                    </div>
+                    <div class="item-image"><img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt="">
+                    </div>
+                    <div class="item-space">
+                        <p>Manual brew (AeroPress, Clever Dripper, V60)</p>
+                    </div>
+                    <div class="item-image"> <img class="ok-icon" src="https://img.icons8.com/color/26/000000/ok.png"
+                            alt=""></div>
+                    <div class="item-space">
+                        <p>Espresso</p>
+                    </div>
+                </div>
+                <div class="colors-style">
+                    <div class="checkbox grey-square"> </div>
+                    <div class="black-square color-space"></div>
+                    <div class="red-square color-space"></div>
+                    <div class="green-square color-space"></div>
+                    <div class="pink-square color-space"></div>
+                </div>
+                <div class="shop-items">
+                    <div class="euro-icon"><img src="./images/euro-icon.png" alt=""></div>
+                    <div class="shop-icon"><img src="./images/shop-icon.png" alt=""></div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="site-footer d-none d-md-block">
+        <div class="container-fluid top-footer pt-5">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="footer-menu footer-widget col-6 col-md-3 col-xl-2 mb-3 mb-md-0">
+                        <h3 class="footer-widget__heading h6">About us</h3>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Brand history</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Corporate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu footer-widget col-6 col-md-3 col-xl-2 mb-3 mb-md-0">
+                        <h3 class="footer-widget__heading h6">Support</h3>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Service centres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Faq</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Downloads</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu footer-widget col-6 col-md-3 col-xl-2 mb-3 mb-md-0">
+                        <h3 class="footer-widget__heading h6">More</h3>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget footer-widget-social col-6 col-md-3 col-xl-2 pl-md-5 mb-3 mb-md-0">
+                        <h3 class="footer-widget__heading h6">Follow us</h3>
+                        <ul class="nav flex-row footer-widget__social-list">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Privacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Terms of use</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 col-xl-4 d-flex align-items-end justify-content-end">
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end"><img src="./images/footer-end.png" alt=""></div>
+        </div>
+
+        <div class="container-fluid bottom-footer">
+
+            <div class="container">
+
+
+
+
+                <div class="bottom-footer__copyright py-3 pr-3 copy-rights">
+                    <strong>Copyright 2019 espressions - D&D by <a class="copyr" href="https://forcez.nl"
+                            target="_blank">forcez</a></strong>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+
+    <script src="js/footer-reveal.min.js"></script>
+    <script src="js/floatingFormLabels.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/gmap.js"></script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR9ZQoQ1CU6ZCwvMdzxLpuFVe2fE8D98c&callback=initProductFinderMap"
+        async defer></script>
+</body>
+
+</html>

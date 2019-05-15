@@ -1,0 +1,111 @@
+/*=============================================
+=            The Juicer Theme            =
+=============================================*/
+body.espresso-theme {
+    color: #181818;
+    background: #fff;
+}
+.dropdown-toggle {
+    color: #0c0e0e;
+}
+
+/*----------  Site Header  ----------*/
+.espresso-theme .bg-primary {
+    background-color: #a8181d!important;
+}
+
+/*----------  Top Navigation  ----------*/
+.espresso-theme .top-navigation {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+50,752201+51,bf6e4e+100;Brown+Gloss */
+background: rgba(168, 24, 29, 1); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(168, 24, 29, 1) 0%, rgba(168, 24, 29, 1) 50%, rgba(168, 24, 29, 1) 51%, rgba(168, 24, 29, 1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(168, 24, 29, 1) 0%,rgba(168, 24, 29, 1) 50%,rgba(168, 24, 29, 1) 51%,rgba(168, 24, 29, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(168, 24, 29, 1) 0%,rgba(168, 24, 29, 1) 50%,rgba(168, 24, 29, 1) 51%,rgba(168, 24, 29, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+}
+.espresso-theme .top-navigation .secondary-navbar,
+.espresso-theme .offcanvas .secondary-navbar {
+    font-family: 'MyriadPro-Bold';
+}
+.espresso-theme .top-navigation .nav-item .nav-link,
+.espresso-theme .top-navigation .dropdown-item,
+.espresso-theme > .offcanvas .nav-item .nav-link {
+    color: #000;
+    font-size: 0.875rem;
+}
+
+/*----------  Bottom Navigation  ----------*/
+.espresso-theme .bottom-navigation {
+    background: #f2f2f2;
+}
+.espresso-theme .dropdown.extra-items.show .dots-wrapper,
+.espresso-theme .dropdown--full-hover:not(.extra-items).show .dropdown-toggle {
+    background: gray;
+}
+
+/*----------  Site Footer  ----------*/
+.espresso-theme .top-footer {
+    background: #ebebeb;
+    color: #000;
+}
+.espresso-theme .footer-widget {
+    font-family: 'NexaBold';
+}
+.espresso-theme .footer-widget .nav .nav-link,
+.espresso-theme .footer-widget-social .nav.footer-widget__social-list .nav-link {
+    color: #000;
+}
+.espresso-theme .footer-widget .nav .nav-link:hover,
+.espresso-theme .footer-widget .nav .nav-link:focus,
+.espresso-theme .footer-widget-social .nav.footer-widget__social-list .nav-link:hover,
+.espresso-theme .footer-widget-social .nav.footer-widget__social-list .nav-link:focus {
+    color: #a8181d; 
+}
+.espresso-theme .footer-widget-social .nav .nav-link {
+    color: #000;
+}
+.espresso-theme .footer-widget-social .nav .nav-link:hover,
+.espresso-theme .footer-widget-social .nav .nav-link:focus {
+    color: #a8181d;
+}
+.espresso-theme .footer-widget-social {
+    border-color: #a8181d;
+}
+
+/*=============================================
+=            Responsive Media Queries            =
+=============================================*/
+@media (max-width: 767.98px) {
+    #logo-notch {
+        visibility: hidden;
+    }
+    .espress-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filter-styles {
+        margin-left: 400px;
+        position: absolute;
+    }
+    .mobile-footer {
+        background: #0c0e0e;
+        border-bottom: 5px solid #eda42e;
+        color: #403f3f;
+    }
+
+    .mobile-footer a {
+        color: #403f3f;
+    }
+
+    .mobile-footer .footer-widget__social-list li a {
+        color: #fff;
+    }
+}
+@media(min-width: 992px) {
+    .juicer-theme .icons-menu .nav-item .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/*=====  End of Responsive Media Queries  ======*/
+/*=====  End of The Juicer Theme  ======*/

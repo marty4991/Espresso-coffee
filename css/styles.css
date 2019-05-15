@@ -1,0 +1,233 @@
+/*=============================================
+
+=            General            =
+=============================================*/
+/*----------  /layouts/fonts/ Include  ----------*/
+@font-face {
+    font-family: 'NexaBold';
+    src: url('/layouts/fonts/NexaBold.woff2') format('woff2'),
+        url('/layouts/fonts/NexaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NexaLight';
+    src: url('/layouts/fonts/nexa_light.woff2') format('woff2'),
+         url('/layouts/fonts/nexa_light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Calibri';
+    src: url('/layouts/fonts/Calibri-Bold.eot');
+    src: url('/layouts/fonts/Calibri-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/layouts/fonts/Calibri-Bold.woff2') format('woff2'),
+        url('/layouts/fonts/Calibri-Bold.woff') format('woff'),
+        url('/layouts/fonts/Calibri-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Calibri';
+    src: url('/layouts/fonts/Calibri.eot');
+    src: url('/layouts/fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+        url('/layouts/fonts/Calibri.woff2') format('woff2'),
+        url('/layouts/fonts/Calibri.woff') format('woff'),
+        url('/layouts/fonts/Calibri.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: url('/layouts/fonts/MyriadProBold.eot');
+    src: url('/layouts/fonts/MyriadProBold.eot') format('embedded-opentype'),
+      url('/layouts/fonts/MyriadProBold.woff2') format('woff2'),
+      url('/layouts/fonts/MyriadProBold.woff') format('woff'),
+      url('/layouts/fonts/MyriadProBold.ttf') format('truetype'),
+      url('/layouts/fonts/MyriadProBold.svg#MyriadProBold') format('svg');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('/layouts/fonts/MyriadProRegular.eot');
+    src: url('/layouts/fonts/MyriadProRegular.eot') format('embedded-opentype'),
+      url('/layouts/fonts/MyriadProRegular.woff2') format('woff2'),
+      url('/layouts/fonts/MyriadProRegular.woff') format('woff'),
+      url('/layouts/fonts/MyriadProRegular.ttf') format('truetype'),
+      url('/layouts/fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
+}
+.espress-img {
+    max-width: 100%;
+    width: 2000px;
+    height:auto;
+    overflow: hidden;
+    margin-top:-20px;
+   
+}
+.espress-img:after{
+    display:block;
+    position:relative;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0, #fff 70%);
+    margin-top: -375px;
+    height: 375px;
+    width: 1700px;
+    content: '';
+}
+.filter-img {
+    position:relative;
+    float: right;
+    margin-top: -56px;
+}
+.filter-styles {
+    color: #000;
+    margin-top: -45px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 100px;
+}
+.filter-sort{
+    margin-top: -8px;
+    margin-left: 25px;
+}
+.espresso-description {
+    position: absolute;
+    color: #181818;
+    font-family: 'Nexa Bold';
+    font-weight: 600;
+    width: 500px;
+    font-size: 40px;
+    margin-top: -300px;
+    margin-left: 230px;
+    line-height: 1;
+}
+.espresso-description p {
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.footer-end {
+    margin-left: -14px;
+}
+.copy-rights {
+    margin-right: -200px;
+    margin-top: -55px;
+    color: #fff;
+    position: relative;
+    float: right;
+    
+}
+.copyr {
+    color:#fff;
+}
+.site-inner {
+    padding-top: 115px;
+    transition: transform 0.3s ease-in;
+}
+
+/*----------  Site Footer  ----------*/
+.footer-widget__heading {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-widget-social {
+    border-left: 1px solid;
+}
+.footer-widget .nav .nav-link {
+    font-size: .875rem;
+    padding: .3rem 0;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
+}
+.footer-widget__social-list {
+    margin: .75rem 0;
+}
+.footer-widget__social-list .nav-item + .nav-item .nav-link  {
+    padding-left: 1.25rem;
+}
+.bottom-footer__notch {
+    height: 40px;
+    min-width: 500px;
+    width: 100%;
+    position: relative;
+}
+.bottom-footer__copyright {
+    flex: 1 0 auto;
+    padding-left: 5rem;
+}
+@media (max-width: 767.98px) {
+    .site-inner {
+        padding-top: 55px;
+        padding-bottom: 150px;
+    }
+    .footer-widget-social {
+        border-left: 0;
+    }
+    .site-footer-mobile {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .mobile-footer {
+        font-size: 0.625rem;
+    }
+    .mobile-footer .footer-widget__social-list li a {
+        padding: .3rem .5rem !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .site-inner {
+        padding-top: 106px;
+    }
+}
+@media (max-width: 991.98px) { 
+    .h1, h1 {
+        font-size: 2rem;
+    }
+    .h2, h2 {
+        font-size: 1.25rem;
+    }
+    .h4, h4 {
+        font-size: .95rem;
+    }   
+    .h5, h5 {
+        font-size: .855rem;
+    }
+}
+@media (max-width: 1199.98px) {
+    h1, .h1 {
+        font-size: 2.25rem;
+    }
+}
+@media (min-width: 1505px) {
+    .container {
+        max-width: 1505px;
+    }
+}
+
+@media (max-width:768px) {
+    .filter-styles {
+    font-size:16px;
+    margin-left: 0;
+    width:100px;
+    display: block;
+    position: fixed;
+    }
+    .font-sort {
+        width: 16px;
+        height: 16px;
+    }
+    .espresso-description {
+        font-size: 16px;
+        width: 300px;
+    }
+}
+@media (max-width:500px) { 
+    .espresso-description {
+        margin-left:0;
+        font-size: 10px;
+    }
+}
+/*=====  End of Responsive Media Queries  ======*/
+
+

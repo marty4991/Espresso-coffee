@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+.section {
+    margin-top: 15px;
+}
+.row-items {
+    width: 260px;
+    height: 550px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
+     margin: 29px;
+
+}
+.item-part-number {
+    width: 132px;
+    height: 37px;
+    color: #0d0d0b;
+    font-size: 17px;
+    letter-spacing: 0.6px;
+    margin-left: 20px;
+}
+.item-part-number .text-decoration {
+text-transform: uppercase;
+text-decoration: underline;
+}
+.item-description {
+    width: 162px;
+    height: 86px;
+    color: #0d0d0b;
+    font-family: 'Calibri';
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    margin-left: 20px;
+    margin-top: 30px;
+    line-height: 1;
+}
+.ok-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    float: left;
+}
+.item-image{
+    margin-top: -11px;
+}
+.item-space {
+    margin-left: 18px;
+}
+.grey-square {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #e0e0e0;
+    background-color: #A2A0A3;
+}
+.black-square {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #e0e0e0;
+    background-color: #000010;
+}
+.red-square {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #e0e0e0;
+    background-color: #ff0000;
+}
+.green-square {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #e0e0e0;
+    background-color: #33a457;
+}
+.pink-square {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #e0e0e0;
+    background-color: #ca0088;
+}
+.colors-style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:25px;
+    margin-right: 27px;
+}
+.color-space {
+    margin-left: 8px;
+}
+.checkbox {
+    margin: 0 0 0 20px;
+    position: relative;
+    float: right;
+    
+}
+.shop-items {
+    width: 228px;
+    height: 52px;
+    border: 1px solid #cbcbcb;
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-left: 16px;
+}
+.euro-icon {
+    float: left;
+    margin: 17px 0 0 15px;
+}
+.shop-icon {
+    float: right;
+    margin: 13px 15px 0 0;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1600px;
+    margin:auto;
+}
+.color-ss{
+    color: black;
+}
