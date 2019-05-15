@@ -107,6 +107,7 @@
 }
 .footer-end {
     margin-left: -14px;
+    overflow:hidden;
 }
 .copy-rights {
     margin-right: -200px;
