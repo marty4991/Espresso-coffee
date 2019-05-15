@@ -55,6 +55,10 @@
       url('/layouts/fonts/MyriadProRegular.ttf') format('truetype'),
       url('/layouts/fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
 }
+.espresso-theme {
+    overflow:hidden;
+}
+
 .espress-img {
     max-width: 100%;
     width: 2000px;

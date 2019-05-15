@@ -1,6 +1,9 @@
 /*=============================================
 =            The Juicer Theme            =
 =============================================*/
+body {
+    overflow:hidden;
+}
 body.espresso-theme {
     color: #181818;
     background: #fff;
@@ -28,13 +31,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', end
     font-family: 'MyriadPro-Bold';
 }
 .espresso-theme .top-navigation .nav-item .nav-link,
+<<<<<<< HEAD
 
+=======
+>>>>>>> 870eb0812e5b9138ffa8cc128e39a9376428da45
 .espresso-theme > .offcanvas .nav-item .nav-link {
     color: white;
     font-size: 0.875rem;
 }
 .espresso-theme .top-navigation .dropdown-item {
+<<<<<<< HEAD
     color:black;
+=======
+    color: black; 
+>>>>>>> 870eb0812e5b9138ffa8cc128e39a9376428da45
 }
 
 /*----------  Bottom Navigation  ----------*/
